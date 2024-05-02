@@ -10,13 +10,15 @@ import Foundation
 struct Constant {
         
     static let today_prompt = """
-    could you recommend me songs  from todays global chart, use json as the output and also generate the artist album and brief description
+    could you recommend me songs  from todays  global chart, use json as the output and also generate the artist album and brief description
     [
        {
-               "artist": "Olivia Rodrigo",
-               "album": "SOUR",
-               "song": "good 4 u",
-               "description": "An energetic pop-rock anthem with raw lyrics and infectious melodies, showcasing Olivia Rodrigo's versatile vocal range."
+                  "artist": "Kendrick Lamar",
+                  "album": "Mr. Morale & the Big Steppers",
+                  "song": "euphoria.",
+                  "description": "A introspective and thought-provoking hip-hop track with introspective lyrics and a laid-back beat.",
+                  "genre": "Hip-Hop"
+    
            }
     ]
     

@@ -21,6 +21,8 @@ struct SongRow: View {
                 Text(song.song)
                     .font(.system(.title, design: .rounded))
                 
+                Text(song.genre)
+                
                 
                 
             }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Song: Codable, Hashable{
-    let artist, album, song, description: String
+    let artist, album, song, description, genre: String
 }
 
 
@@ -16,7 +16,7 @@ extension Song {
     
     static let dummyData: [Song] =
     [
-    Song(artist: "Hindia", album: "Lagipula Hidup Akan Berakhir", song: "Cincin", description: "asdasdadas")
+    Song(artist: "Hindia", album: "Lagipula Hidup Akan Berakhir", song: "Cincin", description: "asdasdadas", genre: "Rock")
     ]
     
 }

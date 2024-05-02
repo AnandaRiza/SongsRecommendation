@@ -10,38 +10,24 @@ import Firebase
 
 struct ContentView: View {
     @StateObject var songVM = SongVM()
+    @State private var isRedacted: Bool = true
+
 
     
     
     var body: some View {
-      
-        NavigationStack{
-            List{
-                ForEach(songVM.song, id:\.self){
-                    item in SongRow(song: item)
+        TabView {
+            SongsView()
+                .tabItem {
+                    Label("Daylist", systemImage: "sun.max.fill")
                 }
-                
-            }
             
-            .navigationTitle("Your Songs of the Day")
-            .overlay {
-                songVM.song.isEmpty ? ProgressView() : nil
-            }
-//            .task {
-//                await placeVM.getPlaces()
-//            }
-            
-            .onChange(of: songVM.isReady) { oldValue, isReady in
-                if isReady {
-                    Task {
-                        await songVM.getSongs()
-                    }
+            RecommendationView()
+                .tabItem {
+                    Label("Song Generator", systemImage: "fireworks")
                 }
-                
-            }
-            
         }
-
+        .tint(.primary)
     }
 }
 

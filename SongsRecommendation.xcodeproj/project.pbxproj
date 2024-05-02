@@ -23,6 +23,8 @@
 		524F60E92BE33BE900FC3B0A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60E82BE33BE900FC3B0A /* FirebaseRemoteConfigSwift */; };
 		524F60EB2BE33D8100FC3B0A /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60EA2BE33D8100FC3B0A /* SongRow.swift */; };
 		524F60EF2BE3501C00FC3B0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */; };
+		524F60F12BE36A2200FC3B0A /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F02BE36A2200FC3B0A /* SongsView.swift */; };
+		524F60F32BE36AE700FC3B0A /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F22BE36AE700FC3B0A /* RecommendationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
 		524F60EA2BE33D8100FC3B0A /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		524F60F02BE36A2200FC3B0A /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		524F60F22BE36AE700FC3B0A /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			children = (
 				524F60AB2BE3368A00FC3B0A /* ContentView.swift */,
 				524F60EA2BE33D8100FC3B0A /* SongRow.swift */,
+				524F60F02BE36A2200FC3B0A /* SongsView.swift */,
+				524F60F22BE36AE700FC3B0A /* RecommendationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +360,8 @@
 				524F60E42BE33B2400FC3B0A /* RemoteConfigService.swift in Sources */,
 				524F60DF2BE339BB00FC3B0A /* Constant.swift in Sources */,
 				524F60E12BE33A6800FC3B0A /* SongVM.swift in Sources */,
+				524F60F12BE36A2200FC3B0A /* SongsView.swift in Sources */,
+				524F60F32BE36AE700FC3B0A /* RecommendationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
