@@ -14,6 +14,15 @@
 		524F60BB2BE3368B00FC3B0A /* SongsRecommendationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60BA2BE3368B00FC3B0A /* SongsRecommendationTests.swift */; };
 		524F60C52BE3368B00FC3B0A /* SongsRecommendationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60C42BE3368B00FC3B0A /* SongsRecommendationUITests.swift */; };
 		524F60C72BE3368B00FC3B0A /* SongsRecommendationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60C62BE3368B00FC3B0A /* SongsRecommendationUITestsLaunchTests.swift */; };
+		524F60DA2BE3385100FC3B0A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60D92BE3385100FC3B0A /* Song.swift */; };
+		524F60DD2BE3391E00FC3B0A /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60DC2BE3391E00FC3B0A /* GoogleGenerativeAI */; };
+		524F60DF2BE339BB00FC3B0A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60DE2BE339BB00FC3B0A /* Constant.swift */; };
+		524F60E12BE33A6800FC3B0A /* SongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60E02BE33A6800FC3B0A /* SongVM.swift */; };
+		524F60E42BE33B2400FC3B0A /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */; };
+		524F60E72BE33BE900FC3B0A /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60E62BE33BE900FC3B0A /* FirebaseRemoteConfig */; };
+		524F60E92BE33BE900FC3B0A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60E82BE33BE900FC3B0A /* FirebaseRemoteConfigSwift */; };
+		524F60EB2BE33D8100FC3B0A /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60EA2BE33D8100FC3B0A /* SongRow.swift */; };
+		524F60EF2BE3501C00FC3B0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,12 @@
 		524F60C02BE3368B00FC3B0A /* SongsRecommendationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongsRecommendationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F60C42BE3368B00FC3B0A /* SongsRecommendationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRecommendationUITests.swift; sourceTree = "<group>"; };
 		524F60C62BE3368B00FC3B0A /* SongsRecommendationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRecommendationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		524F60D92BE3385100FC3B0A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		524F60DE2BE339BB00FC3B0A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		524F60E02BE33A6800FC3B0A /* SongVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVM.swift; sourceTree = "<group>"; };
+		524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
+		524F60EA2BE33D8100FC3B0A /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
+		524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524F60E92BE33BE900FC3B0A /* FirebaseRemoteConfigSwift in Frameworks */,
+				524F60DD2BE3391E00FC3B0A /* GoogleGenerativeAI in Frameworks */,
+				524F60E72BE33BE900FC3B0A /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +92,7 @@
 		524F609D2BE3368A00FC3B0A = {
 			isa = PBXGroup;
 			children = (
+				524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */,
 				524F60A82BE3368A00FC3B0A /* SongsRecommendation */,
 				524F60B92BE3368B00FC3B0A /* SongsRecommendationTests */,
 				524F60C32BE3368B00FC3B0A /* SongsRecommendationUITests */,
@@ -94,6 +113,7 @@
 		524F60A82BE3368A00FC3B0A /* SongsRecommendation */ = {
 			isa = PBXGroup;
 			children = (
+				524F60E22BE33B0800FC3B0A /* Config */,
 				524F60D82BE3381700FC3B0A /* Services */,
 				524F60D72BE3380A00FC3B0A /* ViewModel */,
 				524F60D62BE337E500FC3B0A /* Model */,
@@ -134,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				524F60AB2BE3368A00FC3B0A /* ContentView.swift */,
+				524F60EA2BE33D8100FC3B0A /* SongRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +178,8 @@
 		524F60D62BE337E500FC3B0A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				524F60D92BE3385100FC3B0A /* Song.swift */,
+				524F60DE2BE339BB00FC3B0A /* Constant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +187,7 @@
 		524F60D72BE3380A00FC3B0A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				524F60E02BE33A6800FC3B0A /* SongVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,6 +197,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		524F60E22BE33B0800FC3B0A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +223,11 @@
 			dependencies = (
 			);
 			name = SongsRecommendation;
+			packageProductDependencies = (
+				524F60DC2BE3391E00FC3B0A /* GoogleGenerativeAI */,
+				524F60E62BE33BE900FC3B0A /* FirebaseRemoteConfig */,
+				524F60E82BE33BE900FC3B0A /* FirebaseRemoteConfigSwift */,
+			);
 			productName = SongsRecommendation;
 			productReference = 524F60A62BE3368A00FC3B0A /* SongsRecommendation.app */;
 			productType = "com.apple.product-type.application";
@@ -263,6 +300,10 @@
 				Base,
 			);
 			mainGroup = 524F609D2BE3368A00FC3B0A;
+			packageReferences = (
+				524F60DB2BE3391E00FC3B0A /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				524F60E52BE33BE900FC3B0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 524F60A72BE3368A00FC3B0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +322,7 @@
 			files = (
 				524F60B12BE3368B00FC3B0A /* Preview Assets.xcassets in Resources */,
 				524F60AE2BE3368B00FC3B0A /* Assets.xcassets in Resources */,
+				524F60EF2BE3501C00FC3B0A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524F60DA2BE3385100FC3B0A /* Song.swift in Sources */,
+				524F60EB2BE33D8100FC3B0A /* SongRow.swift in Sources */,
 				524F60AC2BE3368A00FC3B0A /* ContentView.swift in Sources */,
 				524F60AA2BE3368A00FC3B0A /* SongsRecommendationApp.swift in Sources */,
+				524F60E42BE33B2400FC3B0A /* RemoteConfigService.swift in Sources */,
+				524F60DF2BE339BB00FC3B0A /* Constant.swift in Sources */,
+				524F60E12BE33A6800FC3B0A /* SongVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +677,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		524F60DB2BE3391E00FC3B0A /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+		524F60E52BE33BE900FC3B0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		524F60DC2BE3391E00FC3B0A /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 524F60DB2BE3391E00FC3B0A /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		524F60E62BE33BE900FC3B0A /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 524F60E52BE33BE900FC3B0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		524F60E82BE33BE900FC3B0A /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 524F60E52BE33BE900FC3B0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 524F609E2BE3368A00FC3B0A /* Project object */;
 }

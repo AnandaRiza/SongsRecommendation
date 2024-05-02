@@ -1,21 +1,47 @@
 //
 //  ContentView.swift
-//  SongsRecommendation
+//  PlacesAI
 //
-//  Created by MACBOOK PRO on 02/05/24.
+//  Created by MACBOOK PRO on 24/04/24.
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    @StateObject var songVM = SongVM()
+
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+      
+        NavigationStack{
+            List{
+                ForEach(songVM.song, id:\.self){
+                    item in SongRow(song: item)
+                }
+                
+            }
+            
+            .navigationTitle("Your Songs of the Day")
+            .overlay {
+                songVM.song.isEmpty ? ProgressView() : nil
+            }
+//            .task {
+//                await placeVM.getPlaces()
+//            }
+            
+            .onChange(of: songVM.isReady) { oldValue, isReady in
+                if isReady {
+                    Task {
+                        await songVM.getSongs()
+                    }
+                }
+                
+            }
+            
         }
-        .padding()
+
     }
 }
 
