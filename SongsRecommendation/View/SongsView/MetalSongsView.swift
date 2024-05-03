@@ -1,15 +1,15 @@
 //
-//  ContentView.swift
-//  PlacesAI
+//  RecommendationView.swift
+//  SongsRecommendation
 //
-//  Created by MACBOOK PRO on 24/04/24.
+//  Created by MACBOOK PRO on 02/05/24.
 //
 
 import SwiftUI
 import Firebase
 
-struct SongsView: View {
-    @StateObject var songVM = SongVM()
+struct MetalSongsView: View {
+    @StateObject var songVM = MetalSongVM()
     @State private var isRedacted: Bool = true
 
 
@@ -25,9 +25,8 @@ struct SongsView: View {
                 
             }
             
-            .navigationTitle("Your Songs of the Day")
             .overlay {
-                songVM.song.isEmpty ? ProgressView() : nil
+                songVM.song.isEmpty ? ProgressView().tint(.green) : nil
             }
 //            .task {
 //                await placeVM.getPlaces()
@@ -36,7 +35,7 @@ struct SongsView: View {
             .onChange(of: songVM.isReady) { oldValue, isReady in
                 if isReady {
                     Task {
-                        await songVM.getSongs()
+                        await songVM.getMetalSongs()
                     }
                 }
                 
@@ -45,7 +44,7 @@ struct SongsView: View {
         }
         
         .refreshable {
-            
+            await songVM.getMetalSongs()
         }
         
 
@@ -53,5 +52,6 @@ struct SongsView: View {
 }
 
 #Preview {
-    SongsView()
+     MetalSongsView()
+        .preferredColorScheme(.dark)
 }

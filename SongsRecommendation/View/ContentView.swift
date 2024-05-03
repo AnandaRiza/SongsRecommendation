@@ -9,25 +9,42 @@ import SwiftUI
 import Firebase
 
 struct ContentView: View {
-    @StateObject var songVM = SongVM()
-    @State private var isRedacted: Bool = true
-
-
-    
+   @State private var selectedTag = 0
     
     var body: some View {
-        TabView {
-            SongsView()
-                .tabItem {
-                    Label("Daylist", systemImage: "sun.max.fill")
+        NavigationStack {
+            VStack{
+                Picker("", selection: $selectedTag){
+                    Text("Metal")
+                        .tag(0)
+                    Text("Anime")
+                        .tag(1)
+                    Text("Rap")
+                        .tag(2)
+                    Text("K - Pop")
+                        .tag(3)
                 }
-            
-            RecommendationView()
-                .tabItem {
-                    Label("Song Generator", systemImage: "fireworks")
+                .pickerStyle(SegmentedPickerStyle())
+                
+                switch selectedTag {
+                case 0:
+                    MetalSongsView()
+                case 1:
+                    AnimeSongsView()
+                case 2:
+                    RapSongsView()
+                case 3:
+                    KpopSongsView()
+                    
+                default:
+                    Text("Segment")
                 }
+                Spacer()
+            }
+            .navigationTitle("Daylist")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .tint(.primary)
+        
     }
 }
 

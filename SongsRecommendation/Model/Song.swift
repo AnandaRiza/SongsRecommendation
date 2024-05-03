@@ -16,7 +16,7 @@ extension Song {
     
     static let dummyData: [Song] =
     [
-    Song(artist: "Hindia", album: "Lagipula Hidup Akan Berakhir", song: "Cincin", description: "asdasdadas", genre: "Rock")
+        Song(artist: "Hindia", album: "Lagipula Hidup Akan Berakhir", song: "Cincin", description: "asdasdadas", genre: "Rock")
     ]
     
 }

@@ -1,6 +1,6 @@
 //
-//  PlaceRow.swift
-//  PlacesAI
+//  SongRow.swift
+//
 //
 //  Created by MACBOOK PRO on 24/04/24.
 //
@@ -10,26 +10,29 @@ import SwiftUI
 struct SongRow: View {
     var song: Song
     
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 16){
-            
-            
-            
-            
+        VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Image(systemName: "music.note.list")
                 Text(song.song)
                     .font(.system(.title, design: .rounded))
                 
-                Text(song.genre)
-                
-                
-                
             }
+            
+            HStack {
+//                Image(systemName: "square.stack.fill")
+                Text(song.album)
+                    .font(.headline)
+                    .padding()
+            }
+            
+    
     
             
+            
             Text(song.description)
-                .font(.caption)
+                .font(.subheadline)
                 .padding()
            
                 
@@ -44,18 +47,16 @@ struct SongRow: View {
                 Spacer()
                 
                 HStack{
-                    Image(systemName: "folder.fill")
+                    Image(systemName: "book.pages.fill")
                     
                     
                     
-                    Text(song.album)
+                    Text(song.genre)
                         .font(.subheadline)
                     
                 }
                 
                 .padding([.vertical, .horizontal], 8)
-                .background(Color(.systemGroupedBackground))
-                .clipShape(Capsule())
             }
             
             

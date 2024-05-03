@@ -17,14 +17,19 @@
 		524F60DA2BE3385100FC3B0A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60D92BE3385100FC3B0A /* Song.swift */; };
 		524F60DD2BE3391E00FC3B0A /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60DC2BE3391E00FC3B0A /* GoogleGenerativeAI */; };
 		524F60DF2BE339BB00FC3B0A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60DE2BE339BB00FC3B0A /* Constant.swift */; };
-		524F60E12BE33A6800FC3B0A /* SongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60E02BE33A6800FC3B0A /* SongVM.swift */; };
+		524F60E12BE33A6800FC3B0A /* MetalSongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60E02BE33A6800FC3B0A /* MetalSongVM.swift */; };
 		524F60E42BE33B2400FC3B0A /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */; };
 		524F60E72BE33BE900FC3B0A /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60E62BE33BE900FC3B0A /* FirebaseRemoteConfig */; };
 		524F60E92BE33BE900FC3B0A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 524F60E82BE33BE900FC3B0A /* FirebaseRemoteConfigSwift */; };
 		524F60EB2BE33D8100FC3B0A /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60EA2BE33D8100FC3B0A /* SongRow.swift */; };
 		524F60EF2BE3501C00FC3B0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */; };
-		524F60F12BE36A2200FC3B0A /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F02BE36A2200FC3B0A /* SongsView.swift */; };
-		524F60F32BE36AE700FC3B0A /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F22BE36AE700FC3B0A /* RecommendationView.swift */; };
+		524F60F12BE36A2200FC3B0A /* AnimeSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F02BE36A2200FC3B0A /* AnimeSongsView.swift */; };
+		524F60F32BE36AE700FC3B0A /* MetalSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F22BE36AE700FC3B0A /* MetalSongsView.swift */; };
+		524F60F52BE4807600FC3B0A /* AnimeSongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F42BE4807600FC3B0A /* AnimeSongVM.swift */; };
+		524F60F82BE4829F00FC3B0A /* RapSongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F72BE4829F00FC3B0A /* RapSongVM.swift */; };
+		524F60FA2BE4862100FC3B0A /* KpopSongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60F92BE4862100FC3B0A /* KpopSongVM.swift */; };
+		524F61002BE48EFE00FC3B0A /* RapSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F60FF2BE48EFE00FC3B0A /* RapSongsView.swift */; };
+		524F61042BE4916900FC3B0A /* KpopSongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F61032BE4916900FC3B0A /* KpopSongsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +62,17 @@
 		524F60C62BE3368B00FC3B0A /* SongsRecommendationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRecommendationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		524F60D92BE3385100FC3B0A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		524F60DE2BE339BB00FC3B0A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		524F60E02BE33A6800FC3B0A /* SongVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongVM.swift; sourceTree = "<group>"; };
+		524F60E02BE33A6800FC3B0A /* MetalSongVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalSongVM.swift; sourceTree = "<group>"; };
 		524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
 		524F60EA2BE33D8100FC3B0A /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		524F60EE2BE3501B00FC3B0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		524F60F02BE36A2200FC3B0A /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
-		524F60F22BE36AE700FC3B0A /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		524F60F02BE36A2200FC3B0A /* AnimeSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSongsView.swift; sourceTree = "<group>"; };
+		524F60F22BE36AE700FC3B0A /* MetalSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalSongsView.swift; sourceTree = "<group>"; };
+		524F60F42BE4807600FC3B0A /* AnimeSongVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSongVM.swift; sourceTree = "<group>"; };
+		524F60F72BE4829F00FC3B0A /* RapSongVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapSongVM.swift; sourceTree = "<group>"; };
+		524F60F92BE4862100FC3B0A /* KpopSongVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KpopSongVM.swift; sourceTree = "<group>"; };
+		524F60FF2BE48EFE00FC3B0A /* RapSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapSongsView.swift; sourceTree = "<group>"; };
+		524F61032BE4916900FC3B0A /* KpopSongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KpopSongsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,10 +167,9 @@
 		524F60D32BE3369A00FC3B0A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				524F60FC2BE48DDC00FC3B0A /* SongsView */,
+				524F60FB2BE48DB700FC3B0A /* Components */,
 				524F60AB2BE3368A00FC3B0A /* ContentView.swift */,
-				524F60EA2BE33D8100FC3B0A /* SongRow.swift */,
-				524F60F02BE36A2200FC3B0A /* SongsView.swift */,
-				524F60F22BE36AE700FC3B0A /* RecommendationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,7 +202,10 @@
 		524F60D72BE3380A00FC3B0A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				524F60E02BE33A6800FC3B0A /* SongVM.swift */,
+				524F60E02BE33A6800FC3B0A /* MetalSongVM.swift */,
+				524F60F42BE4807600FC3B0A /* AnimeSongVM.swift */,
+				524F60F72BE4829F00FC3B0A /* RapSongVM.swift */,
+				524F60F92BE4862100FC3B0A /* KpopSongVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +223,25 @@
 				524F60E32BE33B2400FC3B0A /* RemoteConfigService.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		524F60FB2BE48DB700FC3B0A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				524F60EA2BE33D8100FC3B0A /* SongRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		524F60FC2BE48DDC00FC3B0A /* SongsView */ = {
+			isa = PBXGroup;
+			children = (
+				524F60F22BE36AE700FC3B0A /* MetalSongsView.swift */,
+				524F60F02BE36A2200FC3B0A /* AnimeSongsView.swift */,
+				524F60FF2BE48EFE00FC3B0A /* RapSongsView.swift */,
+				524F61032BE4916900FC3B0A /* KpopSongsView.swift */,
+			);
+			path = SongsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,14 +385,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				524F60DA2BE3385100FC3B0A /* Song.swift in Sources */,
+				524F61042BE4916900FC3B0A /* KpopSongsView.swift in Sources */,
 				524F60EB2BE33D8100FC3B0A /* SongRow.swift in Sources */,
+				524F60F52BE4807600FC3B0A /* AnimeSongVM.swift in Sources */,
+				524F61002BE48EFE00FC3B0A /* RapSongsView.swift in Sources */,
 				524F60AC2BE3368A00FC3B0A /* ContentView.swift in Sources */,
+				524F60F82BE4829F00FC3B0A /* RapSongVM.swift in Sources */,
 				524F60AA2BE3368A00FC3B0A /* SongsRecommendationApp.swift in Sources */,
+				524F60FA2BE4862100FC3B0A /* KpopSongVM.swift in Sources */,
 				524F60E42BE33B2400FC3B0A /* RemoteConfigService.swift in Sources */,
 				524F60DF2BE339BB00FC3B0A /* Constant.swift in Sources */,
-				524F60E12BE33A6800FC3B0A /* SongVM.swift in Sources */,
-				524F60F12BE36A2200FC3B0A /* SongsView.swift in Sources */,
-				524F60F32BE36AE700FC3B0A /* RecommendationView.swift in Sources */,
+				524F60E12BE33A6800FC3B0A /* MetalSongVM.swift in Sources */,
+				524F60F12BE36A2200FC3B0A /* AnimeSongsView.swift in Sources */,
+				524F60F32BE36AE700FC3B0A /* MetalSongsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +568,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -560,6 +597,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
